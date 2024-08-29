@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: "Space Grotesk",sans-serif;
+    /* background-color: #190b1f; */
+    background-color: #0e2c3e;
+
+}
+h2{
+    @apply text-xl md:text-4xl
+}
+p{
+    @apply text-xl tracking-tight leading-relaxed
+}
+span{
+    /* @apply text-purple-600 */
+   color:  #25c19b
+}
+
+.beautify-effect{
+ position: absolute;
+ border-radius: 50%;
+ pointer-events: none;
+ z-index: -91;
+ background: radial-gradient(circle, rgba(19, 202, 107, 0.2),transparent);   
+}
+
+
+
+/* In your tailwind.css or a global CSS file */
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+/* Custom scrollbar styles */ 
+.scrollbar-custom::-webkit-scrollbar {
+    width: 4px;
+    /* Adjust width of scrollbar */
+    height: 4px;
+    /* Adjust height of scrollbar (for horizontal scrollbar) */
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+    background: #0e2c3e;
+    /* Background color of scrollbar track */
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+    background-color:#0e2c3e !important;
+    /* Scrollbar thumb color */
+    border-radius: 10px;
+    /* Rounded corners of scrollbar thumb */
+    border: 2px solid #f1f1f1;
+    /* Adds padding around the thumb */
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background-color: #0e2c3e;
+    /* Darker color on hover */
+}
+
+/* Firefox support */
+.scrollbar-custom {
+    scrollbar-width:thin;
+    scroll-behavior: smooth;
+    /* Adjust width for Firefox */
+    scrollbar-color: #0e2c3e #ffffff ;
+    /* Thumb and track color for Firefox */
+}
+
+.gray{
+  filter: grayscale(100%);
+}
+
+/* #25c19b blue fill */
